@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PriorityDemoController">
+            <connections>
+                <outlet property="kFirstLabel" destination="c6O-rJ-OfV" id="AMh-gT-mdM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a Label For Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6O-rJ-OfV">
+                    <rect key="frame" x="100" y="100" width="175" height="20.5"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TextField" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="stp-vc-lqo">
+                    <rect key="frame" x="8" y="269" width="250" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="pbn-Zd-u3Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KO-dp-0v1">
+                    <rect key="frame" x="266" y="269" width="46" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.33333333329999998" green="0.8862745098" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Hly-ci-19I"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="kTestClick:" destination="-1" eventType="touchUpInside" id="TOm-If-pxh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="c6O-rJ-OfV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="0cq-cw-oUf"/>
+                <constraint firstAttribute="trailing" secondItem="9KO-dp-0v1" secondAttribute="trailing" constant="8" id="E2u-FM-oiX"/>
+                <constraint firstItem="c6O-rJ-OfV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="L9b-aK-hfd"/>
+                <constraint firstItem="stp-vc-lqo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="MBy-ag-cYk"/>
+                <constraint firstItem="9KO-dp-0v1" firstAttribute="leading" secondItem="stp-vc-lqo" secondAttribute="trailing" constant="8" id="NM2-01-kdq"/>
+                <constraint firstAttribute="trailing" secondItem="c6O-rJ-OfV" secondAttribute="trailing" priority="749" constant="150" id="T4m-A4-hrn"/>
+                <constraint firstItem="9KO-dp-0v1" firstAttribute="centerY" secondItem="stp-vc-lqo" secondAttribute="centerY" id="hSA-Ux-L2z"/>
+                <constraint firstItem="stp-vc-lqo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="hb1-mJ-2Ot"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="612" y="431"/>
+        </view>
+    </objects>
+</document>
